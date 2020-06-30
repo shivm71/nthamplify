@@ -1,0 +1,34 @@
+{
+    "paths": [
+        {
+            "name": "/event",
+            "lambdaFunction": "eventlambda",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "event",
+    "apiName": "event",
+    "functionArns": [
+        {
+            "lambdaFunction": "eventlambda"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-nthamplify-dev-15559-authRole",
+        "unAuthRoleName": "amplify-nthamplify-dev-15559-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "eventlambda",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
